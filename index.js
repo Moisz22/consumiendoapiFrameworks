@@ -1,7 +1,7 @@
 let tabla = document.getElementById("tabla")
 let busqueda = document.getElementById("boton_busqueda")
 let search = document.getElementById("search")
-let url = 'http://192.168.100.66/apiFrameworks/'
+let url = 'http://localhost/apiFrameworks/'
 
 
 busqueda.addEventListener('click', function(e){
@@ -14,11 +14,11 @@ busqueda.addEventListener('click', function(e){
 
     if(search.value === null || search.value === ''){
 
-        url = 'http://192.168.100.66/apiFrameworks/'
+        url = 'http://localhost/apiFrameworks/'
         
     }else{
 
-        url = 'http://192.168.100.66/apiFrameworks/?id='+search.value
+        url = 'http://localhost/apiFrameworks/?id='+search.value
 
     }
 
